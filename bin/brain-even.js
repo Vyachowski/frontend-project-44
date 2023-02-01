@@ -6,8 +6,8 @@ import welcome from '../src/cli.js';
 let answer;
 let score = 0;
 const numbers = threeNumbersWithEveness();
-//MAIN LOGIC
 const name = welcome();
+//MAIN LOGIC
 for(let i = 0; i < 3; i += 1) {
   console.log('Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ' + numbers[i][0]);
   answer = readlineSync.question('Your answer: ').toLowerCase();
@@ -19,11 +19,8 @@ for(let i = 0; i < 3; i += 1) {
   break
   }
 }
+score === 3 ? console.log('Congratulations, ' + name + '!') : false;
 //FUNCTIONS
-function randomRoundNumber(min, max) {
-  return  Math.round(Math.random() * (max - min) + min);
-}
-
 function threeNumbersWithEveness() {
   const result = [
     [[],[]],
@@ -35,4 +32,8 @@ function threeNumbersWithEveness() {
     result[i][1] = result[i][0] % 2 === 0 ? 'yes' : 'no';
   }
   return result;
+}
+
+function randomRoundNumber(min, max) {
+  return  Math.round(Math.random() * (max - min) + min);
 }
