@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "A Java Script Educational Project – Brain Games Collection",
+  "description": "npm JavaScript Educational Project – Brain Games Collection",
   "main": "index.js",
   "type": "module",
   "bin": {
