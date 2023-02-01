@@ -14,10 +14,9 @@ for(let i = 0; i < 3; i += 1) {
   if (answer === numbers[i][1]) {
     console.log('Correct!');
     score += 1;
-  } else {
-  console.log('Answer \'' + answer + '\' is wrong answer ;(. Correct answer was \'' + numbers[i][1] + '\'. Let\'s try again, ' + name);
-  break
   }
+  console.log('Answer \'' + answer + '\' is wrong answer ;(. Correct answer was \'' + numbers[i][1] + '\'. Let\'s try again, ' + name + '!');
+  break
 }
 score === 3 ? console.log('Congratulations, ' + name + '!') : false;
 //FUNCTIONS
@@ -28,12 +27,8 @@ function threeNumbersWithEveness() {
     [[],[]]
   ];
   for(let i = 0; i < 3; i += 1) {
-    result[i][0] = randomRoundNumber(1, 999);
+    result[i][0] = Math.round(Math.random() * 100);
     result[i][1] = result[i][0] % 2 === 0 ? 'yes' : 'no';
   }
   return result;
-}
-
-function randomRoundNumber(min, max) {
-  return  Math.round(Math.random() * (max - min) + min);
 }
