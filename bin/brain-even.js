@@ -4,13 +4,13 @@ import readlineSync from 'readline-sync';
 import welcome from '../src/cli.js';
 //MAIN VARIABLES
 let answer;
-let wrongAnswer = 0;
 let score = 0;
+let defeat = false;
 const hiddenNumbers = threeNumbersWithEveness();
 const name = welcome();
 //MAIN LOGIC
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-for(let i = 0; i < 3 && wrongAnswer < 1; i += 1) {
+for(let i = 0; i < 3 && defeat === false; i += 1) {
   console.log('Question: ' + hiddenNumbers[i][0]);
   answer = readlineSync.question('Your answer: ').toLowerCase();
   if (answer === hiddenNumbers[i][1]) {
