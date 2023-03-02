@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
 import welcome from '../src/cli.js';
-let name = welcome();
+
+const name = welcome();
 console.log(name);
