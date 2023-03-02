@@ -1,32 +1,20 @@
-const getBlankResults = () => [[[], []], [[], []], [[], []]];
-const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
-const getCommonDiv = (a, b) => {
-  if (!b) {
-    return a;
-  }
-  return getCommonDiv(b, a % b);
-};
-const isPrime = (num) => {
-  if (num % 1 || num < 2) {
-    return false;
-  }
-  const m = Math.sqrt(num);
-  for (let i = 2; i <= m; i += 1) {
-    if (num % i === 0) return false;
-  }
-  return true;
-};
+import {
+  getBlankResults,
+  getRandomInt,
+  getCommonDiv,
+  isPrime,
+} from './service-functions.js';
 
-export default function numbersWithEveness() {
+const numbersWithEveness = () => {
   const results = getBlankResults();
   for (let i = 0; i < 3; i += 1) {
     results[i][0] = getRandomInt(1000);
     results[i][1] = results[i][0] % 2 === 0 ? 'yes' : 'no';
   }
   return results;
-}
+};
 
-export function expressionsWithEquality() {
+const expressionsWithEquality = () => {
   const results = getBlankResults();
   for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomInt(100);
@@ -46,9 +34,9 @@ export function expressionsWithEquality() {
     }
   }
   return results;
-}
+};
 
-export function brainGcd() {
+const brainGcd = () => {
   const results = getBlankResults();
   // eslint-disable-next-line no-restricted-syntax
   for (const result of results) {
@@ -58,9 +46,9 @@ export function brainGcd() {
     result[1] = String(getCommonDiv(randomNumber1, randomNumber2));
   }
   return results;
-}
+};
 
-export function brainProgression() {
+const brainProgression = () => {
   const results = getBlankResults();
   // eslint-disable-next-line no-restricted-syntax
   for (const result of results) {
@@ -76,9 +64,9 @@ export function brainProgression() {
     result[1] = String(hiddenNumber);
   }
   return results;
-}
+};
 
-export function brainPrime() {
+const brainPrime = () => {
   const results = getBlankResults();
   // eslint-disable-next-line no-restricted-syntax
   for (const result of results) {
@@ -87,4 +75,12 @@ export function brainPrime() {
     result[1] = isPrime(randomNumber) ? 'yes' : 'no';
   }
   return results;
-}
+};
+
+export {
+  numbersWithEveness,
+  expressionsWithEquality,
+  brainGcd,
+  brainProgression,
+  brainPrime,
+};

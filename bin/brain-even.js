@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameEngine from '../src/gameengine.js';
+import gameEngine from '../src/game-engine.js';
 import threeNumbersWithEveness from '../src/answers.js';
 
 const answers = threeNumbersWithEveness();
