@@ -5,7 +5,7 @@ import {
   isPrime,
 } from './service-functions.js';
 
-const numbersWithEveness = () => {
+const brainEven = () => {
   const results = getBlankResults();
   for (let i = 0; i < 3; i += 1) {
     results[i][0] = getRandomInt(1000);
@@ -14,7 +14,7 @@ const numbersWithEveness = () => {
   return results;
 };
 
-const expressionsWithEquality = () => {
+const brainCalc = () => {
   const results = getBlankResults();
   for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomInt(100);
@@ -78,8 +78,8 @@ const brainPrime = () => {
 };
 
 export {
-  numbersWithEveness,
-  expressionsWithEquality,
+  brainEven,
+  brainCalc,
   brainGcd,
   brainProgression,
   brainPrime,
