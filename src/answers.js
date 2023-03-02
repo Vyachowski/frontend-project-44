@@ -6,6 +6,16 @@ const getCommonDiv = (a, b) => {
   }
   return getCommonDiv(b, a % b);
 };
+const isPrime = (num) => {
+  if (num % 1 || num < 2) {
+    return false;
+  }
+  const m = Math.sqrt(num);
+  for (let i = 2; i <= m; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return true;
+};
 
 export default function numbersWithEveness() {
   const results = getBlankResults();
@@ -64,6 +74,17 @@ export function brainProgression() {
     ariphmeticProgression[hiddenNumberIndex] = '..';
     result[0] = ariphmeticProgression.join(' ');
     result[1] = String(hiddenNumber);
+  }
+  return results;
+}
+
+export function brainPrime() {
+  const results = getBlankResults();
+  // eslint-disable-next-line no-restricted-syntax
+  for (const result of results) {
+    const randomNumber = getRandomInt(3571);
+    result[0] = randomNumber;
+    result[1] = isPrime(randomNumber) ? 'yes' : 'no';
   }
   return results;
 }
