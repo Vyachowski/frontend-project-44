@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import gameEngine from '../src/gameengine.js';
 import threeNumbersWithEveness from '../src/answers.js';
 
