@@ -78,10 +78,10 @@ const brainProgression = () => {
 
 const brainPrime = () => {
   const results = getBlankResults();
-  for (const result of results) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomInt(3571);
-    result[0] = randomNumber;
-    result[1] = isPrime(randomNumber) ? 'yes' : 'no';
+    results[i][0] = randomNumber;
+    results[i][1] = isPrime(randomNumber) ? 'yes' : 'no';
   }
   results[3] = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   return results;
