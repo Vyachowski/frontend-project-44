@@ -2,6 +2,4 @@
 import gameEngine from '../src/game-engine.js';
 import { brainPrime } from '../src/game-data.js';
 
-const answers = brainPrime();
-const gameRule = '';
-gameEngine(gameRule, answers);
+gameEngine(brainPrime());
