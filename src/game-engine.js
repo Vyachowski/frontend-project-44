@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import welcome from './cli.js';
 
-export default function gameEngine(gameData) {
+const gameEngine = (gameData) => {
   const name = welcome();
   console.log(gameData[3]);
   for (let i = 0; i < 3; i += 1) {
@@ -14,4 +14,6 @@ export default function gameEngine(gameData) {
     }
   }
   return console.log(`Congratulations, ${name}!`);
-}
+};
+
+export default gameEngine;
