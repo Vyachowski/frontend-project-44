@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 import gameEngine from '../src/game-engine.js';
-import { brainProgression } from '../src/answers.js';
+import { brainProgression } from '../src/game-data.js';
 
-const answers = brainProgression();
-const gameRule = 'What number is missing in the progression?';
-gameEngine(gameRule, answers);
+gameEngine(brainProgression());
