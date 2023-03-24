@@ -48,12 +48,11 @@ const brainCalc = () => {
 
 const brainGcd = () => {
   const results = getBlankResults();
-  // eslint-disable-next-line no-restricted-syntax
-  for (const result of results) {
+  for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomInt(100);
     const randomNumber2 = getRandomInt(100);
-    result[0] = `${randomNumber1} ${randomNumber2}`;
-    result[1] = String(getCommonDiv(randomNumber1, randomNumber2));
+    results[i][0] = `${randomNumber1} ${randomNumber2}`;
+    results[i][1] = String(getCommonDiv(randomNumber1, randomNumber2));
   }
   results[3] = 'Find the greatest common divisor of given numbers.';
   return results;
@@ -61,18 +60,17 @@ const brainGcd = () => {
 
 const brainProgression = () => {
   const results = getBlankResults();
-  // eslint-disable-next-line no-restricted-syntax
-  for (const result of results) {
+  for (let i = 0; i < 3; i += 1) {
     const ariphmeticProgression = [getRandomInt(100)];
     const progressionRule = getRandomInt(20);
-    for (let i = 1; i <= getRandomInt(10, 5); i += 1) {
-      ariphmeticProgression[i] = ariphmeticProgression[i - 1] + progressionRule;
+    for (let y = 1; y <= getRandomInt(10, 5); y += 1) {
+      ariphmeticProgression[y] = ariphmeticProgression[y - 1] + progressionRule;
     }
     const hiddenNumberIndex = getRandomInt(ariphmeticProgression.length - 1);
     const hiddenNumber = ariphmeticProgression[hiddenNumberIndex];
     ariphmeticProgression[hiddenNumberIndex] = '..';
-    result[0] = ariphmeticProgression.join(' ');
-    result[1] = String(hiddenNumber);
+    results[i][0] = ariphmeticProgression.join(' ');
+    results[i][1] = String(hiddenNumber);
   }
   results[3] = 'What number is missing in the progression?';
   return results;
@@ -80,7 +78,6 @@ const brainProgression = () => {
 
 const brainPrime = () => {
   const results = getBlankResults();
-  // eslint-disable-next-line no-restricted-syntax
   for (const result of results) {
     const randomNumber = getRandomInt(3571);
     result[0] = randomNumber;
