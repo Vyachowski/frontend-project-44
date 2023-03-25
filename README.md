@@ -2,7 +2,7 @@
 
 An educational project on «Hexlet» programming school course «Front-end Developer» to master a basics of Javascript. 
 
-For **Readme in Russian** please follow [this link](https://github.com/Vyachowski/frontend-project-44/blob/main/README_ru.md)
+Чтобы читать **Readme на русском**  перейдите по [этой ссылке](https://github.com/Vyachowski/frontend-project-44/blob/main/README_ru.md)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Vyachowski/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Vyachowski/frontend-project-44/actions)
@@ -32,7 +32,7 @@ You can run one of the five games with short commands (after global installation
 * ```brain-calc``` – compute simple math example
 * ```brain-even``` – determine if a number is even
 * ```brain-gcd``` – find the greatest common divisor
-* ```brain-prime``` – determine if a number is simple
+* ```brain-prime``` – determine if a [number is prime](https://en.wikipedia.org/wiki/prime_number)
 * ```brain-progression``` – compute skipped number in an ariphmetic progression
 
 Or add 'make' before the command to run it without global installation (e.g. ```make brain-calc```)
@@ -49,7 +49,7 @@ ___
 
 #### Deinstallation
 
-
+[![asciicast](https://asciinema.org/a/570133.svg)](https://asciinema.org/a/570133)
 
 #### Brain-calc
 
