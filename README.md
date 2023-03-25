@@ -25,7 +25,7 @@ Brain Games - collection of simple math games, ran from command line.
 * Clone a GitHub repository via ```git clone https://github.com/Vyachowski/frontend-project-44.git``` or ```git clone git@github.com:Vyachowski/frontend-project-44.git``` for ssh
 * Run in a root directory of the project ```make install```
 * And than run ```npm link``` to run games easily with short commands
-* After winning you can perform ```npm remove -g @hexlet/code``` to uninstall package from global dependencies
+* After winning you can perform ```npm remove -g @hexlet/code``` to uninstall package from the npm global dependencies
 
 ### Executing program
 
