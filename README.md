@@ -11,7 +11,7 @@ ___
 
 ## Description
 
-Brain Games - collection of simple math games, ran from command line.
+Brain Games - collection of simple math games, run from command line.
 
 ## Getting Started
 
