@@ -30,9 +30,11 @@ Brain Games - collection of simple math games, ran from command line.
 
 ### Executing program
 
-You can run one of the five games with short commands (after global installation with ```npm link```):
+You can run one of the five games with short commands (after global installation with ```npm link```) :
 * ```brain-calc``` – compute simple math example
 * ```brain-even``` – determine if a number is even
 * ```brain-gcd``` – find the greatest common divisor
 * ```brain-prime``` – determine if a number is simple
 * ```brain-progression``` – compute skipped number in an ariphmetic progression
+
+Or add 'make' before the command to run it without global installation (e.g. ```make brain-calc```)
