@@ -1,4 +1,4 @@
-# Project Title
+# Hexlet JS Project – Brain Games
 An educational project on «Hexlet» programming school course «Front-end Developer» to master a basics of Javascript.
 
 ___
