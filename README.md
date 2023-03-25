@@ -1,9 +1,8 @@
 # Hexlet JS Project – Brain Games
-An educational project on «Hexlet» programming school course «Front-end Developer» to master a basics of Javascript.
 
-___
+An educational project on «Hexlet» programming school course «Front-end Developer» to master a basics of Javascript. 
 
-Обучающий проект на курсе Хекслет по Javascript.
+For **Readme in Russian** please follow [this link](https://github.com/Vyachowski/frontend-project-44/blob/main/README_ru.md)
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Vyachowski/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Vyachowski/frontend-project-44/actions)
@@ -37,3 +36,37 @@ You can run one of the five games with short commands (after global installation
 * ```brain-progression``` – compute skipped number in an ariphmetic progression
 
 Or add 'make' before the command to run it without global installation (e.g. ```make brain-calc```)
+
+___
+
+___
+
+### Game demo
+
+#### Installation
+
+[![asciicast](https://asciinema.org/a/DNX1sRhJFOkFixH5TRhWASezd.svg)](https://asciinema.org/a/DNX1sRhJFOkFixH5TRhWASezd)
+
+#### Deinstallation
+
+
+
+#### Brain-calc
+
+[![asciicast](https://asciinema.org/a/570068.svg)](https://asciinema.org/a/570068)
+
+#### Brain-even
+
+[![asciicast](https://asciinema.org/a/570072.svg)](https://asciinema.org/a/570072)
+
+#### Brain-gcd
+
+[![asciicast](https://asciinema.org/a/570073.svg)](https://asciinema.org/a/570073)
+
+#### Brain-prime
+
+[![asciicast](https://asciinema.org/a/570128.svg)](https://asciinema.org/a/570128)
+
+#### Brain-progression
+
+[![asciicast](https://asciinema.org/a/570129.svg)](https://asciinema.org/a/570129)
