@@ -1,6 +1,6 @@
 # Hexlet JS Project – Brain Games
 
-An educational project on «Hexlet» programming school course «Front-end Developer» to master a basics of Javascript. 
+An educational project on «Hexlet» programming school course «Front-end Developer» to master basics of Javascript. 
 
 Чтобы читать **Readme на русском**  перейдите по [этой ссылке](https://github.com/Vyachowski/frontend-project-44/blob/main/README_ru.md)
 
