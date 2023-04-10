@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 // Game engine functions
-const getEmptyData = () => [[[], []], [[], []], [[], []]];
 const getAnswer = () => readlineSync.question('Your answer: ').toLowerCase();
 const getRightAnswer = (gameData, num) => gameData[num][1];
 const displayRules = (gameData) => console.log(gameData[3]);
@@ -8,7 +7,6 @@ const displayQuestion = (gameData, num) => console.log(`Question: ${gameData[num
 const displayDefeat = (userAnswer, rightAnswer, name) => console.log(`Answer ${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${name}!`);
 
 export {
-  getEmptyData,
   displayRules,
   displayQuestion,
   displayDefeat,
