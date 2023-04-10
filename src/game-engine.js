@@ -1,4 +1,4 @@
-import { welcome, getName, displayName } from './cli.js';
+import { getName, displayName, displayGreeting } from './cli.js';
 import {
   displayRules,
   displayQuestion,
@@ -8,7 +8,7 @@ import {
 } from './game-engine-functions.js';
 
 const gameEngine = (gameData) => {
-  welcome();
+  displayGreeting();
   const name = getName();
   displayName(name);
   displayRules(gameData);
