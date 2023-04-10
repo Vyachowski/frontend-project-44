@@ -1,6 +1,6 @@
 # Hexlet JS Project – Brain Games
 
-An educational project on «Hexlet» programming school course «Front-end Developer» to master basics of Javascript. 
+This is an educational project on the "Front-end Developer" course at Hexlet programming school, designed to teach the basics of Javascript.
 
 Чтобы читать **Readme на русском**  перейдите по [этой ссылке](https://github.com/Vyachowski/frontend-project-44/blob/main/README_ru.md)
 
@@ -10,7 +10,7 @@ An educational project on «Hexlet» programming school course «Front-end Devel
 
 ## Description
 
-Brain Games - collection of simple math games, run from command line.
+Brain Games is a collection of simple math games that can be run from the command line.
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ Brain Games - collection of simple math games, run from command line.
 
 ### Executing program
 
-You can run one of the five games with short commands (after global installation with ```npm link```) :
+You can run one of the five games using short commands (after global installation with ```npm link```) :
 * ```brain-calc``` – compute simple math example
 * ```brain-even``` – determine if a number is even
 * ```brain-gcd``` – find the greatest common divisor
