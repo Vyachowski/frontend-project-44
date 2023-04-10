@@ -1,19 +1,25 @@
-import readlineSync from 'readline-sync';
 import { welcome, getName, showName } from './cli.js';
+import {
+  displayRules,
+  displayQuestion,
+  displayDefeat,
+  getAnswer,
+  getRightAnswer,
+} from './game-engine-functions.js';
 
 const gameEngine = (gameData) => {
   welcome();
   const name = getName();
   showName(name);
-  console.log(gameData[3]);
+  displayRules(gameData);
   for (let i = 0; i < 3; i += 1) {
-    console.log(`Question: ${gameData[i][0]}`);
-    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
-    if (userAnswer === gameData[i][1]) {
-      console.log('Correct!');
-    } else {
-      return console.log(`Answer ${userAnswer} is wrong answer ;(. Correct answer was ${gameData[i][1]}. Let's try again, ${name}!`);
+    displayQuestion(gameData, i);
+    const userAnswer = getAnswer();
+    const rightAnswer = getRightAnswer(gameData, i);
+    if (userAnswer !== rightAnswer) {
+      return displayDefeat(userAnswer, rightAnswer, name);
     }
+    console.log('Correct!');
   }
   return console.log(`Congratulations, ${name}!`);
 };
