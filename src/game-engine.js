@@ -1,4 +1,4 @@
-import { welcome, getName, showName } from './cli.js';
+import { welcome, getName, displayName } from './cli.js';
 import {
   displayRules,
   displayQuestion,
@@ -10,7 +10,7 @@ import {
 const gameEngine = (gameData) => {
   welcome();
   const name = getName();
-  showName(name);
+  displayName(name);
   displayRules(gameData);
   for (let i = 0; i < 3; i += 1) {
     displayQuestion(gameData, i);
