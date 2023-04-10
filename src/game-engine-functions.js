@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-// Game engine functions
+
 const getAnswer = () => readlineSync.question('Your answer: ').toLowerCase();
 const getRightAnswer = (gameData, num) => gameData[num][1];
 const displayRules = (gameData) => console.log(gameData[3]);
