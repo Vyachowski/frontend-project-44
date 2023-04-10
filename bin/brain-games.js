@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { welcome, getName, showName } from '../src/cli.js';
+import { welcome, getName, displayName } from '../src/cli.js';
 
 welcome();
-showName(getName());
+displayName(getName());
