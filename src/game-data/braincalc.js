@@ -1,4 +1,4 @@
-import { getEmptyData, getRandomInt } from '../functions.js';
+import { getEmptyData, getRandomInt } from './game-data-functions.js';
 
 const brainCalc = () => {
   const results = getEmptyData();

@@ -1,4 +1,4 @@
-import { getEmptyData, getRandomInt, getCommonDiv } from '../functions.js';
+import { getEmptyData, getRandomInt, getCommonDiv } from './game-data-functions.js';
 
 const brainGcd = () => {
   const results = getEmptyData();
