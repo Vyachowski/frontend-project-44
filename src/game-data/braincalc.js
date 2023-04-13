@@ -11,8 +11,8 @@ const brainCalc = () => {
         results[i][1] = String(randomNumber1 + randomNumber2);
         break;
       case 2:
-        results[i][0] = `${randomNumber1} - ${randomNumber2}`;
         results[i][1] = String(randomNumber1 - randomNumber2);
+        results[i][0] = `${randomNumber1} - ${randomNumber2}`;
         break;
       default:
         results[i][0] = `${randomNumber1} * ${randomNumber2}`;
