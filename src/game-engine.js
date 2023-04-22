@@ -8,10 +8,10 @@ import {
 } from './tools.js';
 
 const gameEngine = (gameData) => {
-  const roundToWin = 3;
+  const roundsToWin = 3;
   const name = getUserName();
   displayRules(gameData);
-  for (let i = 0; i < roundToWin; i += 1) {
+  for (let i = 0; i < roundsToWin; i += 1) {
     displayQuestion(gameData, i);
     const userAnswer = getUserAnswer();
     const rightAnswer = getRightAnswer(gameData, i);
