@@ -16,11 +16,13 @@ const gameEngine = (gameData) => {
     const userAnswer = getUserAnswer();
     const rightAnswer = getRightAnswer(gameData, i);
     if (userAnswer !== rightAnswer) {
-      return displayDefeatMessage(userAnswer, rightAnswer, name);
+      displayDefeatMessage(userAnswer, rightAnswer, name);
+      return false;
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
+  return true;
 };
 
 export default gameEngine;

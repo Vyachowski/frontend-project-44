@@ -30,4 +30,3 @@ export {
   getCommonDiv,
   isPrime,
 };
-

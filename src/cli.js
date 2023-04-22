@@ -5,6 +5,6 @@ const getUserName = () => {
   const name = readlineSync.question('Your answer: ');
   console.log(`Hello, ${name}!`);
   return name;
-}
+};
 
-export { getUserName };
+export default getUserName;
