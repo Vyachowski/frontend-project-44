@@ -1,4 +1,4 @@
-import { getUserName } from './cli.js';
+import getUserName from './cli.js';
 import {
   displayRules,
   displayQuestion,
