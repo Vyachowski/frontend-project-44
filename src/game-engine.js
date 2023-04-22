@@ -5,7 +5,7 @@ import {
   displayDefeatMessage,
   getUserAnswer,
   getRightAnswer,
-} from './game-engine-functions.js';
+} from './tools.js';
 
 const gameEngine = (gameData) => {
   const roundToWin = 3;
