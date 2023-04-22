@@ -21,19 +21,56 @@ Brain Games is a collection of simple math games that can be run from the comman
 
 ### Installing
 
-* Clone a GitHub repository via ```git clone https://github.com/Vyachowski/frontend-project-44.git``` or ```git clone git@github.com:Vyachowski/frontend-project-44.git``` for ssh
-* Run in a root directory of the project ```make install```
-* And than run ```npm link``` to run games easily with short commands
-* After winning you can perform ```npm remove -g @hexlet/code``` to uninstall package from the npm global dependencies
+* Clone a GitHub repository via  
+
+```sh
+git clone https://github.com/Vyachowski/frontend-project-44.git
+```
+
+or 
+
+```sh 
+git clone git@github.com:Vyachowski/frontend-project-44.git
+```
+for ssh
+* Run in a root directory of the project 
+```sh 
+make install
+```
+* And than execute 
+```sh 
+npm link
+```
+to run games easily with short commands
+* After winning you can perform 
+```sh
+npm remove -g @hexlet/code
+```
+to uninstall package from the npm global dependencies
 
 ### Executing program
 
 You can run one of the five games using short commands (after global installation with ```npm link```) :
-* ```brain-calc``` – compute simple math example
-* ```brain-even``` – determine if a number is even
-* ```brain-gcd``` – find the greatest common divisor
-* ```brain-prime``` – determine if a [number is prime](https://en.wikipedia.org/wiki/prime_number)
-* ```brain-progression``` – compute skipped number in an ariphmetic progression
+```sh
+brain-calc
+```
+Compute simple math example
+```sh
+brain-even
+```
+Determine if a number is even
+```sh 
+brain-gcd
+```
+Find the greatest common divisor
+```sh 
+brain-prime
+```
+Determine if a [number is prime](https://en.wikipedia.org/wiki/prime_number)
+```sh 
+brain-progression
+```
+Compute skipped number in an ariphmetic progression
 
 Or add 'make' before the command to run it without global installation (e.g. ```make brain-calc```)
 
