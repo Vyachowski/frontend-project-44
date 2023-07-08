@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+// Game engine
 const getUserName = () => {
   console.log('Welcome to the Brain Games!\nMay I have your name?');
   const name = readlineSync.question('Your answer: ');
@@ -26,6 +27,7 @@ const gameEngine = (question, roundRules) => {
   return true;
 };
 
+// Service functions
 const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
 const getCommonDiv = (a, b) => ((!b) ? a : getCommonDiv(b, a % b));
 const isPrime = (num) => {
