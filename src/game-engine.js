@@ -1,27 +1,21 @@
+import readlineSync from 'readline-sync';
 import getUserName from './cli.js';
-import {
-  displayRules,
-  displayQuestion,
-  displayDefeatMessage,
-  getUserAnswer,
-  getRightAnswer,
-} from './tools.js';
 
-const gameEngine = (gameData) => {
+const gameEngine = (game) => {
   const roundsToWin = 3;
-  const name = getUserName();
-  displayRules(gameData);
-  for (let i = 0; i < roundsToWin; i += 1) {
-    displayQuestion(gameData, i);
-    const userAnswer = getUserAnswer();
-    const rightAnswer = getRightAnswer(gameData, i);
+  const userName = getUserName();
+  console.log(game[3]);
+  for (let currentRound = 0; currentRound < roundsToWin; currentRound += 1) {
+    console.log(`Question: ${game[currentRound][0]}`);
+    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
+    const rightAnswer = game[currentRound][1];
     if (userAnswer !== rightAnswer) {
-      displayDefeatMessage(userAnswer, rightAnswer, name);
+      console.log(`Answer ${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}. Let's try again, ${userName}!`);
       return false;
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${userName}!`);
   return true;
 };
 

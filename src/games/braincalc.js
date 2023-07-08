@@ -1,7 +1,7 @@
-import { getEmptyData, getRandomInt } from '../tools.js';
+import { getRandomInt } from '../tools.js';
 
 const brainCalc = () => {
-  const results = getEmptyData();
+  const results = [[[], []], [[], []], [[], []]];
   for (let i = 0; i < 3; i += 1) {
     const randomNumber1 = getRandomInt(100);
     const randomNumber2 = getRandomInt(100);
