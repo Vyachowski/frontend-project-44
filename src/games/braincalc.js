@@ -1,26 +1,24 @@
 import { getRandomInt } from '../tools.js';
 
 const brainCalc = () => {
-  const results = [[[], []], [[], []], [[], []]];
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber1 = getRandomInt(100);
-    const randomNumber2 = getRandomInt(100);
-    switch (getRandomInt(3)) {
-      case 1:
-        results[i][0] = `${randomNumber1} + ${randomNumber2}`;
-        results[i][1] = String(randomNumber1 + randomNumber2);
-        break;
-      case 2:
-        results[i][1] = String(randomNumber1 - randomNumber2);
-        results[i][0] = `${randomNumber1} - ${randomNumber2}`;
-        break;
-      default:
-        results[i][0] = `${randomNumber1} * ${randomNumber2}`;
-        results[i][1] = String(randomNumber1 * randomNumber2);
-    }
+  let task;
+  let result;
+  const randomNumber1 = getRandomInt(100);
+  const randomNumber2 = getRandomInt(100);
+  switch (getRandomInt(3)) {
+    case 1:
+      task = `${randomNumber1} + ${randomNumber2}`;
+      result = String(randomNumber1 + randomNumber2);
+      break;
+    case 2:
+      result = String(randomNumber1 - randomNumber2);
+      task = `${randomNumber1} - ${randomNumber2}`;
+      break;
+    default:
+      task = `${randomNumber1} * ${randomNumber2}`;
+      result = String(randomNumber1 * randomNumber2);
   }
-  results[3] = 'What is the result of the expression?';
-  return results;
+  return [task, result];
 };
 
 export default brainCalc;

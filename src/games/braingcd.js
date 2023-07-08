@@ -1,15 +1,11 @@
-import { getEmptyData, getRandomInt, getCommonDiv } from '../tools.js';
+import { getRandomInt, getCommonDiv } from '../tools.js';
 
 const brainGcd = () => {
-  const results = getEmptyData();
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber1 = getRandomInt(100);
-    const randomNumber2 = getRandomInt(100);
-    results[i][0] = `${randomNumber1} ${randomNumber2}`;
-    results[i][1] = String(getCommonDiv(randomNumber1, randomNumber2));
-  }
-  results[3] = 'Find the greatest common divisor of given numbers.';
-  return results;
+  const randomNumber1 = getRandomInt(100);
+  const randomNumber2 = getRandomInt(100);
+  const task = `${randomNumber1} ${randomNumber2}`;
+  const result = String(getCommonDiv(randomNumber1, randomNumber2));
+  return [task, result];
 };
 
 export default brainGcd;

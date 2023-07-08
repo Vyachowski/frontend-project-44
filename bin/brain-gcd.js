@@ -2,4 +2,7 @@
 import gameEngine from '../src/game-engine.js';
 import brainGcd from '../src/games/braingcd.js';
 
-gameEngine(brainGcd());
+const question = 'Find the greatest common divisor of given numbers.';
+const roundRules = [brainGcd(), brainGcd(), brainGcd()];
+
+gameEngine(question, roundRules);

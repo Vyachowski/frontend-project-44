@@ -1,13 +1,9 @@
-import { getEmptyData, getRandomInt } from '../tools.js';
+import { getRandomInt } from '../tools.js';
 
 const brainEven = () => {
-  const results = getEmptyData();
-  for (let i = 0; i < 3; i += 1) {
-    results[i][0] = getRandomInt(1000);
-    results[i][1] = results[i][0] % 2 === 0 ? 'yes' : 'no';
-  }
-  results[3] = 'Answer "yes" if the number is even, otherwise answer "no".';
-  return results;
+  const task = getRandomInt(1000);
+  const result = task % 2 === 0 ? 'yes' : 'no';
+  return [task, result];
 };
 
 export default brainEven;
