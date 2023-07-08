@@ -1,4 +1,4 @@
-import { getRandomInt } from '../tools.js';
+import { getRandomInt } from '../game-engine.js';
 
 const brainProgression = () => {
   const ariphmeticProgression = [getRandomInt(100)];

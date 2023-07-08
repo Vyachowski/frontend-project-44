@@ -1,4 +1,4 @@
-import { getRandomInt, isPrime } from '../tools.js';
+import { getRandomInt, isPrime } from '../game-engine.js';
 
 const brainPrime = () => {
   const task = getRandomInt(3571);

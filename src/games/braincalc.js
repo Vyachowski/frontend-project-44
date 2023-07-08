@@ -1,4 +1,4 @@
-import { getRandomInt } from '../tools.js';
+import { getRandomInt } from '../game-engine.js';
 
 const brainCalc = () => {
   let task;

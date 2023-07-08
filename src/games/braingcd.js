@@ -1,4 +1,4 @@
-import { getRandomInt, getCommonDiv } from '../tools.js';
+import { getRandomInt, getCommonDiv } from '../game-engine.js';
 
 const brainGcd = () => {
   const randomNumber1 = getRandomInt(100);
