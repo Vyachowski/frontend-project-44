@@ -35,7 +35,7 @@ git clone git@github.com:Vyachowski/frontend-project-44.git
 for ssh
 * Run in a root directory of the project 
 ```sh 
-make install
+npm ci
 ```
 * And than execute 
 ```sh 
@@ -52,27 +52,27 @@ to uninstall package from the npm global dependencies
 
 You can run one of the five games using short commands (after global installation with ```npm link```) :
 ```sh
-brain-calc
+make brain-calc
 ```
 Compute simple math example
 ```sh
-brain-even
+make brain-even
 ```
 Determine if a number is even
 ```sh 
-brain-gcd
+make brain-gcd
 ```
 Find the greatest common divisor
 ```sh 
-brain-prime
+make brain-prime
 ```
 Determine if a [number is prime](https://en.wikipedia.org/wiki/prime_number)
 ```sh 
-brain-progression
+make brain-progression
 ```
 Compute skipped number in an ariphmetic progression
 
-Or add 'make' before the command to run it without global installation (e.g. ```make brain-calc```)
+To run a command with a global installation, you can omit the 'make' before the command. For example, if you have a program called 'brain-calc' installed globally, you can simply type 'brain-calc' to execute it.
 
 ___
 
