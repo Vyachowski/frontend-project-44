@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 import { getUserName } from '../src/tools.js';
 
-getUserName();
+const userName = getUserName();
+console.log(`Hello, ${userName}!`);

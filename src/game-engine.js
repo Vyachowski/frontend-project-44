@@ -4,6 +4,7 @@ const gameEngine = (question, roundRules) => {
   const roundsToWin = 3;
   const userName = getUserName();
 
+  console.log(`Hello, ${userName}!`);
   console.log(question);
 
   for (let currentRound = 0; currentRound < roundsToWin; currentRound += 1) {
