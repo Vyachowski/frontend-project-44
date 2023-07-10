@@ -1,4 +1,5 @@
-import { getRandomInt, getCommonDiv } from '../game-engine.js';
+const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getCommonDiv = (a, b) => ((!b) ? a : getCommonDiv(b, a % b));
 
 const brainGcd = () => {
   const randomNumber1 = getRandomInt(100);
