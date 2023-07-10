@@ -1,7 +1,8 @@
 import { getUserName, readlineSync } from './tools.js';
 
+const roundsToWin = 3;
+
 const gameEngine = (question, roundRules) => {
-  const roundsToWin = 3;
   const userName = getUserName();
 
   console.log(`Hello, ${userName}!`);
@@ -21,4 +22,4 @@ const gameEngine = (question, roundRules) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameEngine;
+export { gameEngine, roundsToWin };
