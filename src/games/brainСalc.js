@@ -19,7 +19,7 @@ const brainCalc = () => {
       result = String(randomNumber1 * randomNumber2);
       break;
     default:
-      throw new Error('Некорректная операция');
+      throw new Error('Что-то сломалось... Пожалуйста, перезапустите игру.');
   }
   return [task, result];
 };
