@@ -1,4 +1,4 @@
-import { getUserName, readlineSync } from './cli.js';
+import { getUserName, readlineSync } from './tools.js';
 
 const gameEngine = (question, roundRules) => {
   const roundsToWin = 3;

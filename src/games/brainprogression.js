@@ -1,4 +1,4 @@
-const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomInt } from '../tools.js';
 
 const brainProgression = () => {
   const ariphmeticProgression = [getRandomInt(100)];

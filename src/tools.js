@@ -7,4 +7,6 @@ const getUserName = () => {
   return userName;
 };
 
-export { getUserName, readlineSync };
+const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+export { getUserName, readlineSync, getRandomInt };

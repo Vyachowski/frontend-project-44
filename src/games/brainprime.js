@@ -1,4 +1,5 @@
-const getRandomInt = (max, min = 1) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomInt } from '../tools.js';
+
 const isPrime = (num) => {
   if (num % 1 || num < 2) {
     return false;
