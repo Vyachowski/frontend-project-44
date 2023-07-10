@@ -3,9 +3,9 @@ import readlineSync from 'readline-sync';
 // Game engine
 const getUserName = () => {
   console.log('Welcome to the Brain Games!\nMay I have your name?');
-  const name = readlineSync.question('Your answer: ');
-  console.log(`Hello, ${name}!`);
-  return name;
+  const userName = readlineSync.question('Your answer: ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
 };
 
 const gameEngine = (question, roundRules) => {
