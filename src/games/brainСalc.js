@@ -5,7 +5,7 @@ const brainCalc = () => {
   let result;
   const randomNumber1 = getRandomInt(100);
   const randomNumber2 = getRandomInt(100);
-  switch (getRandomInt(3)) {
+  switch (getRandomInt(3, 1)) {
     case 1:
       task = `${randomNumber1} + ${randomNumber2}`;
       result = String(randomNumber1 + randomNumber2);
@@ -14,9 +14,12 @@ const brainCalc = () => {
       result = String(randomNumber1 - randomNumber2);
       task = `${randomNumber1} - ${randomNumber2}`;
       break;
-    default:
+    case 3:
       task = `${randomNumber1} * ${randomNumber2}`;
       result = String(randomNumber1 * randomNumber2);
+      break;
+    default:
+      throw new Error('Некорректная операция');
   }
   return [task, result];
 };
